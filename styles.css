@@ -1,0 +1,80 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: Arial;
+    font-size: 11pt;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.news {
+    width: 40%;
+    background-color: #a0f4fa;
+    border-left: 2px solid #cfcfcf;
+    border-right: 2px solid #cfcfcf;
+    border-bottom: 2px solid black;
+    padding: 15px;
+
+}
+
+    div.news:hover {
+        background-color: #ff5959;
+    }
+
+    div.news button {
+        margin: auto;
+        font-size: 9pt;
+        height: 30px;
+        margin-left: 50%;
+        transform: translate(-50%,0);
+        color: white;
+        border: none;
+        box-shadow: 0 0 3px 1px #b0b0b0;
+        background: linear-gradient(0, green, #47de3a);
+    }
+
+    div.news:hover button{
+        box-shadow: 0 0 3px 1px grey;
+    }
+
+        div.news button:hover {
+            background: linear-gradient(0, #47de3a, green);
+        }
+
+        div.news button:active {
+            border: 2px solid grey;
+            box-shadow: 0 0 3px 2px #b0b0b0;
+        }
+
+div.news p {
+    margin-top: 5px;
+}
+
+div.news h2 {
+    margin: 0;
+}
+
+#modal {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 5;
+    position: absolute;
+    display: none;
+}
+
+#modalnews {
+    max-width: 25vw;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+    background-color: #dff261;
+    padding: 10px;
+}
